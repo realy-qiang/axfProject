@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+    {{ block.super }}
+    订单
+{% endblock %}
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/main/order/../../../../static/axf/order/css/address.css' %}">
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    <header>
+        <h3>收货地址</h3>
+    </header>
+
+    <div id="address">
+
+    </div>
+{% endblock %}

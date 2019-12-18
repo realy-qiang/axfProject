@@ -1,0 +1,200 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 17 19:09:04 2019] ***
+compiled with version: 7.4.0 on 17 October 2019 08:24:54
+os: Linux-5.0.0-31-generic #33~18.04.1-Ubuntu SMP Tue Oct 1 10:20:39 UTC 2019
+nodename: python
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/qjg/PycharmProjects/DjangoDay15/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/qjg/Django/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/qjg/PycharmProjects/DjangoDay15/axf
+your processes number limit is 15123
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8888 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41583 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x563aad7c7da0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x563aad7c7da0 pid: 24583 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24583)
+spawned uWSGI worker 1 (pid: 24585, cores: 10)
+spawned uWSGI worker 2 (pid: 24586, cores: 10)
+spawned uWSGI worker 3 (pid: 24596, cores: 10)
+spawned uWSGI worker 4 (pid: 24606, cores: 10)
+spawned uWSGI http 1 (pid: 24615)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 24615)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 17 19:12:42 2019] ***
+compiled with version: 7.4.0 on 17 October 2019 08:24:54
+os: Linux-5.0.0-31-generic #33~18.04.1-Ubuntu SMP Tue Oct 1 10:20:39 UTC 2019
+nodename: python
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/qjg/PycharmProjects/DjangoDay15/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/qjg/Django/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/qjg/PycharmProjects/DjangoDay15/axf
+your processes number limit is 15123
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8888 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45371 (port auto-assigned) fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5649cec5dda0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x5649cec5dda0 pid: 24853 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24853)
+spawned uWSGI worker 1 (pid: 24855, cores: 10)
+spawned uWSGI worker 2 (pid: 24856, cores: 10)
+spawned uWSGI worker 3 (pid: 24869, cores: 10)
+spawned uWSGI worker 4 (pid: 24871, cores: 10)
+spawned uWSGI http 1 (pid: 24892)
+[pid: 24871|app: 0|req: 1/1] 127.0.0.1 () {44 vars in 911 bytes} [Thu Oct 17 19:14:00 2019] GET /homeApp/home/ => generated 21643 bytes in 5573 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 24871|app: 0|req: 5/2] 127.0.0.1 () {42 vars in 838 bytes} [Thu Oct 17 19:14:06 2019] GET /static/axf/main/css/main.css => generated 102 bytes in 1300 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 4)
+[pid: 24871|app: 0|req: 6/3] 127.0.0.1 () {42 vars in 830 bytes} [Thu Oct 17 19:14:06 2019] GET /static/css/bootstrap.css => generated 98 bytes in 1518 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 24871|app: 0|req: 6/4] 127.0.0.1 () {42 vars in 859 bytes} [Thu Oct 17 19:14:06 2019] GET /static/media/images/ad02.jpg => generated 102 bytes in 1742 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 7)
+[pid: 24855|app: 0|req: 2/5] 127.0.0.1 () {42 vars in 822 bytes} [Thu Oct 17 19:14:06 2019] GET /static/css/reset.css => generated 94 bytes in 1754 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 24855|app: 0|req: 2/6] 127.0.0.1 () {42 vars in 852 bytes} [Thu Oct 17 19:14:06 2019] GET /static/axf/main/home/css/swiper.css => generated 109 bytes in 1751 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 2)
+[pid: 24871|app: 0|req: 6/7] 127.0.0.1 () {42 vars in 848 bytes} [Thu Oct 17 19:14:06 2019] GET /static/axf/main/home/css/home.css => generated 107 bytes in 1758 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 6)
+[pid: 24871|app: 0|req: 6/8] 127.0.0.1 () {42 vars in 858 bytes} [Thu Oct 17 19:14:07 2019] GET /static/media/images/ad01.jpg => generated 102 bytes in 454 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 8)
+[pid: 24855|app: 0|req: 3/9] 127.0.0.1 () {42 vars in 810 bytes} [Thu Oct 17 19:14:08 2019] GET /static/js/bootstrap.js => generated 96 bytes in 1832 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 24869|app: 0|req: 2/10] 127.0.0.1 () {42 vars in 800 bytes} [Thu Oct 17 19:14:08 2019] GET /static/js/base.js => generated 91 bytes in 2313 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 24869|app: 0|req: 2/11] 127.0.0.1 () {42 vars in 846 bytes} [Thu Oct 17 19:14:08 2019] GET /static/axf/main/home/js/swiper.jquery.js => generated 114 bytes in 2486 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 1)
+[pid: 24871|app: 0|req: 10/12] 127.0.0.1 () {42 vars in 804 bytes} [Thu Oct 17 19:14:08 2019] GET /static/js/jquery.js => generated 93 bytes in 2578 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 24856|app: 0|req: 2/13] 127.0.0.1 () {42 vars in 829 bytes} [Thu Oct 17 19:14:08 2019] GET /static/axf/main/home/js/home.js => generated 105 bytes in 2885 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 2)
+[pid: 24856|app: 0|req: 2/14] 127.0.0.1 () {42 vars in 865 bytes} [Thu Oct 17 19:14:08 2019] GET /static/media/images/slide03.jpg => generated 105 bytes in 2890 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 24871|app: 0|req: 10/15] 127.0.0.1 () {42 vars in 865 bytes} [Thu Oct 17 19:14:10 2019] GET /static/media/images/slide02.jpg => generated 105 bytes in 1378 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 2)
+[pid: 24855|app: 0|req: 4/16] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:10 2019] GET /static/media/images/banner13.jpg => generated 106 bytes in 1137 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 3)
+[pid: 24871|app: 0|req: 10/17] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:10 2019] GET /static/media/images/banner16.jpg => generated 106 bytes in 1272 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 9)
+[pid: 24869|app: 0|req: 5/18] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:11 2019] GET /static/media/images/goods003.jpg => generated 106 bytes in 960 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 4)
+[pid: 24869|app: 0|req: 5/19] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:11 2019] GET /static/media/images/banner12.jpg => generated 106 bytes in 951 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 8)
+[pid: 24869|app: 0|req: 6/20] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:12 2019] GET /static/media/images/banner14.jpg => generated 106 bytes in 623 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 3)
+[pid: 24855|app: 0|req: 6/21] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:12 2019] GET /static/media/images/goods002.jpg => generated 106 bytes in 604 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 5)
+[pid: 24855|app: 0|req: 6/22] 127.0.0.1 () {42 vars in 811 bytes} [Thu Oct 17 19:14:12 2019] GET /static/js/bootstrap.js => generated 96 bytes in 560 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 4)
+[pid: 24871|app: 0|req: 10/23] 127.0.0.1 () {42 vars in 865 bytes} [Thu Oct 17 19:14:10 2019] GET /static/media/images/slide01.jpg => generated 105 bytes in 2494 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 5)
+[pid: 24869|app: 0|req: 6/24] 127.0.0.1 () {42 vars in 867 bytes} [Thu Oct 17 19:14:12 2019] GET /static/media/images/goods010.jpg => generated 106 bytes in 498 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 5)
+[pid: 24869|app: 0|req: 7/25] 127.0.0.1 () {42 vars in 801 bytes} [Thu Oct 17 19:14:12 2019] GET /static/js/base.js => generated 91 bytes in 196 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 6)
+[pid: 24871|app: 0|req: 11/26] 127.0.0.1 () {42 vars in 847 bytes} [Thu Oct 17 19:14:13 2019] GET /static/axf/main/home/js/swiper.jquery.js => generated 114 bytes in 70 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 24869|app: 0|req: 8/27] 127.0.0.1 () {42 vars in 829 bytes} [Thu Oct 17 19:14:13 2019] GET /static/axf/main/home/js/home.js => generated 105 bytes in 124 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 7)
+[pid: 24871|app: 0|req: 12/28] 127.0.0.1 () {42 vars in 825 bytes} [Thu Oct 17 19:14:13 2019] GET /favicon.ico => generated 85 bytes in 62 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 4)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 24892)
+worker 1 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 4 buried after 3 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Oct 17 19:20:34 2019] ***
+compiled with version: 7.4.0 on 17 October 2019 08:24:54
+os: Linux-5.0.0-31-generic #33~18.04.1-Ubuntu SMP Tue Oct 1 10:20:39 UTC 2019
+nodename: python
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/qjg/PycharmProjects/DjangoDay15/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/qjg/Django/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/qjg/PycharmProjects/DjangoDay15/axf
+your processes number limit is 15123
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8888 fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561f9d32eca0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x561f9d32eca0 pid: 25385 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25385)
+spawned uWSGI worker 1 (pid: 25387, cores: 10)
+spawned uWSGI worker 2 (pid: 25388, cores: 10)
+spawned uWSGI worker 3 (pid: 25403, cores: 10)
+spawned uWSGI worker 4 (pid: 25408, cores: 10)
+[pid: 25408|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 977 bytes} [Thu Oct 17 19:20:52 2019] GET /homeApp/home/ => generated 21643 bytes in 1595 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25403|app: 0|req: 1/2] 127.0.0.1 () {52 vars in 1030 bytes} [Thu Oct 17 19:23:20 2019] GET /homeApp/home/ => generated 21643 bytes in 4008 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 25403|app: 0|req: 2/3] 127.0.0.1 () {50 vars in 939 bytes} [Thu Oct 17 19:23:26 2019] GET /favicon.ico => generated 85 bytes in 171 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 3)
+[pid: 25387|app: 0|req: 1/4] 127.0.0.1 () {52 vars in 1030 bytes} [Thu Oct 17 19:23:44 2019] GET /homeApp/home/ => generated 21643 bytes in 752 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 25387|app: 0|req: 2/5] 127.0.0.1 () {50 vars in 939 bytes} [Thu Oct 17 19:23:45 2019] GET /favicon.ico => generated 85 bytes in 750 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 2 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Oct 18 14:48:50 2019] ***
+compiled with version: 7.4.0 on 17 October 2019 08:24:54
+os: Linux-5.0.0-31-generic #33~18.04.1-Ubuntu SMP Tue Oct 1 10:20:39 UTC 2019
+nodename: python
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/qjg/PycharmProjects/DjangoDay15/axf
+writing pidfile to uwsgi.pid
+detected binary path: /home/qjg/Django/.venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/qjg/PycharmProjects/DjangoDay15/axf
+your processes number limit is 15123
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8888 fd 3
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5606bf0fdcb0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 835120 bytes (815 KB) for 40 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 16 seconds on interpreter 0x5606bf0fdcb0 pid: 17057 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17057)
+spawned uWSGI worker 1 (pid: 17062, cores: 10)
+spawned uWSGI worker 2 (pid: 17063, cores: 10)
+spawned uWSGI worker 3 (pid: 17073, cores: 10)
+spawned uWSGI worker 4 (pid: 17085, cores: 10)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 3 seconds
+worker 2 buried after 3 seconds
+worker 3 buried after 3 seconds
+worker 4 buried after 3 seconds
+goodbye to uWSGI.

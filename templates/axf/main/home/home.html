@@ -1,0 +1,168 @@
+{% extends 'base_main.html' %}
+
+{% load static %}
+
+{% block title %}
+    {{ block.super }}
+    主页
+{% endblock %}
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'axf/main/home/css/swiper.css' %}">
+    <link rel="stylesheet" href="{% static 'axf/main/home/css/home.css' %}">
+{% endblock %}
+
+{% comment %}
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+{% endcomment %}
+{% block content %}
+    {{ block.super }}
+    <div id="home">
+        <div id="topSwiper" class="swiper-container">
+            <div class="swiper-wrapper">
+                {% for wheel in wheels %}
+                    <a href="" class="swiper-slide">
+                        <img src="/static{{ wheel.img }}" alt="">
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+            {# 如果需要导航按钮 #}
+            {# <div class="swiper-button-prev"></div> #}
+            {# <div class="swiper-button-next"></div> #}
+            {##}
+            {# <!-- 如果需要滚动条 --> #}
+            {# <div class="swiper-scrollbar"></div> #}
+        </div>
+        {#  导航栏  #}
+        <div class="topMenu">
+            <nav>
+                <ul>
+                    {% for nav in navs %}
+                        <li>
+                            <img src="/static{{ nav.img }}" alt="">
+                            <span>{{ nav.name }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        {#    mustbuy    #}
+        <div id="swiperMenu" class="swiper-container">
+            <ul class="swiper-wrapper">
+                {% for mustbuy in mustbuys %}
+                    <li class="swiper-slide">
+                        <img src="/static{{ mustbuy.img }}" alt="">
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div style="height: 15px;background-color: white"></div>
+
+        {#    主要商品    #}
+        {% for mainshow in mainshows %}
+            {#        <div class="CVS">#}
+            <ol style="height:5px;background-color: #eeeeee; margin:0">
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                </li>
+            </ol>
+
+            <div class="mainInfo">
+
+            <section>
+                <h2 align="center" style="margin:5px 0 10px; font-size: 0.6rem;padding: 5px 0 0">
+                    {{ mainshow.name }}
+
+                </h2>
+                <h3>
+                    <a href="">更多&gt;</a>
+                    <span></span>
+                </h3>
+                <div>
+                    <a href="">
+                        <img src="/static{{ mainshow.img }}" alt="">
+                    </a>
+                </div>
+                <fieldset>
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                </fieldset>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="/static{{ mainshow.img1 }}" alt="">
+                            <span class="description">
+                                    {{ mainshow.longname1 }}
+                                </span>
+                            <span>&yen;{{ mainshow.price1 }}</span>
+                            <s>&yen;{{ mainshow.marketprice1 }}</s>
+                        </a>
+                        <button>
+                            <span>+</span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <a href="">
+
+                            <img src="/static{{ mainshow.img2 }}" alt="">
+                            <span class="description">
+                                    {{ mainshow.longname2 }}
+                            </span>
+                            <span>&yen;{{ mainshow.price2 }}</span>
+                            <s>&yen;{{ mainshow.marketprice2 }}</s>
+                        </a>
+                        <button>
+                            <span>+</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="/static{{ mainshow.img3 }}" alt="">
+                            <span class="description">
+                                    {{ mainshow.longname3 }}
+                                </span>
+                            <span>
+                                     &yen;{{ mainshow.price3 }}
+                                 </span>
+                            <s>&yen;{{ mainshow.marketprice3 }}</s>
+                        </a>
+                        <button>
+                            <span>+</span>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+        {% endfor %}
+        </div>
+        {#        </div>#}
+    </div>
+{% endblock %}
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'axf/main/home/js/swiper.jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'axf/main/home/js/home.js' %}"></script>
+
+{% endblock %}
